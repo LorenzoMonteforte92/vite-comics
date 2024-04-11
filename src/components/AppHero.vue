@@ -31,4 +31,10 @@
     section{
         background-color: #1C1C1C;
     }
+
+
+    // togliere
+    .container{
+        height: 150px;
+    }
 </style>
