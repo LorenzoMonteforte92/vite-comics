@@ -61,24 +61,28 @@
 </script>
 
 <template>
-    <div class="row py-2">
-        <div class="col-3 d-flex justify-content-center">
-            <img src="../assets/img/dc-logo.png" alt="DC comics logo">
+    <header>
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-3">
+                    <img src="../assets/img/dc-logo.png" alt="DC comics logo">
+                </div>
+                <div class="col-9 d-flex justify-content-center align-items-center">
+                    <nav>
+                        <ul class="m-0 d-flex justify-content-center align-items-center gap-4 pt-3" >
+                            <li v-for="singleLink, index in links"
+                            class="ms-height-max"
+                            :class="{ 'active-element' : singleLink.active}"
+                            @click="makeItemActive(index)"
+                            >
+                                <a href="#">{{ singleLink.text }}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="col-9 d-flex justify-content-center align-items-center">
-            <nav>
-                <ul class="m-0 d-flex justify-content-center align-items-center gap-4 pt-3" >
-                    <li v-for="singleLink, index in links"
-                    class="ms-height-max"
-                    :class="{ 'active-element' : singleLink.active}"
-                    @click="makeItemActive(index)"
-                    >
-                        <a href="#">{{ singleLink.text }}</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    </header>
 </template>
 
 <style scoped lang="scss">

@@ -1,10 +1,11 @@
 <script>
   import AppHeader from './components/AppHeader.vue';
+  import AppHero from './components/AppHero.vue';
   
-
  export default {
   components: { 
     AppHeader,
+    AppHero,
   
   }
  }
@@ -12,9 +13,10 @@
 </script>
 
 <template>
-  <div class="container">
     <AppHeader></AppHeader>
-  </div>
+    <main>
+      <AppHero></AppHero>
+    </main>
 </template>
 
 <style lang="scss">
