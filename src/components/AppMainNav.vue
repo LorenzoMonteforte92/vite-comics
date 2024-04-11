@@ -40,15 +40,16 @@
     <section>
         <div class="container">
             <div class="row">
-                <nav class="col-12 py-2">
-                    <ul class="d-flex justify-content-center align-items-center gap-5" >
+                <nav class="col-12 py-4">
+                    <ul class="d-flex justify-content-center align-items-center" >
                         <li 
                         class="d-flex justify-content-center align-items-center"
                         v-for="singleLink in links">
-                            <div class="d-flex justify-content-center align-items-center" >
-                                <img :src="`../assets/img/buy-${singleLink.img}` " alt="">
+                            <div class="d-flex justify-content-center align-items-center gap-3" >
+                                <img :src="`src/assets/img/buy-${singleLink.img}` " alt="">
+                                <p class="text-center pt-3" >{{singleLink.text}}</p>
                             </div>
-                            <p class="text-center pt-3" >{{singleLink.text}}</p>
+                            
                         </li>
                     </ul>   
                 </nav>
@@ -65,8 +66,8 @@ section{
 }
 
 img{
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    height: 20%;
 }
 
 p{
