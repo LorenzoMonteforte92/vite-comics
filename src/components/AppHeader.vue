@@ -49,7 +49,9 @@
             }
         },
         methods: {
-            
+            makeItemActive (clickedItem) {
+                this.links[clickedItem].active = !this.links[clickedItem].active
+            }
             }
         }
 
@@ -57,22 +59,34 @@
 </script>
 
 <template>
-    <div class="row justify-content-between">
-        <div class="col-2"></div>
-        <div class="col-7">
-        <nav>
-            <ul>
-                <li><a href="#">ciao</a></li>
-                <li><a href="#">ciao</a></li>
-            </ul>
-        </nav>
-    </div>
+    <div class="row py-2">
+        <div class="col-3 d-flex justify-content-center">
+            <img src="../assets/img/dc-logo.png" alt="DC comics logo">
+        </div>
+        <div class="col-9 d-flex justify-content-center align-items-center">
+            <nav>
+                <ul class="m-0 d-flex justify-content-center align-items-center gap-4 pt-3" >
+                    <li v-for="singleLink, index in links"
+                    class="ms-height-max"
+                    :class="{ 'active-element' : singleLink.active}"
+                    @click="makeItemActive(index)"
+                    >
+                        <a href="#">{{ singleLink.text }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </template>
 
 <style scoped lang="scss">
-    @use '../partials/variables';
+
     a {
-        color: $brand-secondary-color;
+        color: #303030;
+    }
+
+    .active-element{
+        color: #0282F9;
+        border-bottom: solid 5px #0282F9;
     }
 </style>

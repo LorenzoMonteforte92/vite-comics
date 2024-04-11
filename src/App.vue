@@ -18,5 +18,5 @@
 </template>
 
 <style lang="scss">
-  @use './style/generic'
+  @use './style/generic';
 </style>
