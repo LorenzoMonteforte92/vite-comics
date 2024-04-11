@@ -63,15 +63,15 @@
 <template>
     <header>
         <div class="container">
-            <div class="row py-2">
-                <div class="col-3">
+            <div class="row">
+                <div class="col-3 py-3">
                     <img src="../assets/img/dc-logo.png" alt="DC comics logo">
                 </div>
-                <div class="col-9 d-flex justify-content-center align-items-center">
+                <div class="col-9 d-flex justify-content-center align-items-end">
                     <nav>
-                        <ul class="m-0 d-flex justify-content-center align-items-center gap-4 pt-3" >
+                        <ul class="m-0 d-flex justify-content-center align-items-center gap-4 pt-2" >
                             <li v-for="singleLink, index in links"
-                            class="ms-height-max"
+                            class="ms-padding"
                             :class="{ 'active-element' : singleLink.active}"
                             @click="makeItemActive(index)"
                             >
@@ -91,11 +91,21 @@
         color: $brand-secondary-color;
     }
 
+    .row{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
     .active-element{
         
         border-bottom: solid 5px #0282F9;
+        margin-bottom: -5px;
             a{
                 color: #0282F9;
             }
+    }
+
+    .ms-padding{
+        padding-bottom: 6%;
     }
 </style>
