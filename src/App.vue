@@ -1,11 +1,13 @@
 <script>
   import AppHeader from './components/AppHeader.vue';
   import AppHero from './components/AppHero.vue';
+  import AppMainNav from './components/AppMainNav.vue';
   
  export default {
   components: { 
     AppHeader,
     AppHero,
+    AppMainNav,
   
   }
  }
@@ -16,6 +18,7 @@
     <AppHeader></AppHeader>
     <main>
       <AppHero></AppHero>
+      <AppMainNav></AppMainNav>
     </main>
 </template>
 
