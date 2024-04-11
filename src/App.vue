@@ -3,6 +3,7 @@
   import AppHero from './components/AppHero.vue';
   import AppMainNav from './components/AppMainNav.vue';
   import AppFooterTop from './components/AppFooterTop.vue';
+  import AppFooterBottom from './components/AppFooterBottom.vue';
   
  export default {
   components: { 
@@ -10,6 +11,7 @@
     AppHero,
     AppMainNav,
     AppFooterTop,
+    AppFooterBottom,
   
   }
  }
@@ -22,7 +24,10 @@
       <AppHero></AppHero>
       <AppMainNav></AppMainNav>
     </main>
-    <AppFooterTop></AppFooterTop>
+    <footer>
+      <AppFooterTop></AppFooterTop>
+      <AppFooterBottom></AppFooterBottom>
+    </footer>
 </template>
 
 <style lang="scss">

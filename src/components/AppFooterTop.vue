@@ -101,7 +101,7 @@
 </script>
 
 <template>
-    <footer class="overflow-hidden position-relative" >
+    <section class="overflow-hidden position-relative" >
         <div class="container">
             <div class="row pt-5">
                 <div class="col-2">
@@ -145,13 +145,13 @@
             </div>
         </div>
         <img class="position-absolute" src="../assets/img/dc-logo-bg.png" alt="">
-    </footer>
+    </section>
 </template>
 
 <style scoped lang="scss">
 @use '../style/partials/variables' as *;
 
-footer{
+section{
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
