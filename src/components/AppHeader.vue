@@ -55,7 +55,9 @@
             }
         }
 
-    
+    //fare che la barra blu sia sotto il link
+
+    //fare che la classe active torni falsa dopo il click su un'altro elemento 
 </script>
 
 <template>
@@ -80,13 +82,16 @@
 </template>
 
 <style scoped lang="scss">
-
+@use '../style/partials/variables' as *;
     a {
-        color: #303030;
+        color: $brand-secondary-color;
     }
 
     .active-element{
-        color: #0282F9;
+        
         border-bottom: solid 5px #0282F9;
+            a{
+                color: #0282F9;
+            }
     }
 </style>
