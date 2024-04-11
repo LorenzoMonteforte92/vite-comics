@@ -45,12 +45,15 @@
                         text: `SHOP`,
                         active: false
                     },
-                ]
+                ],
+
+        
             }
         },
         methods: {
             makeItemActive (clickedItem) {
                 this.links[clickedItem].active = !this.links[clickedItem].active
+    
             }
             }
         }
