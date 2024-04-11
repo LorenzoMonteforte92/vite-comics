@@ -71,5 +71,8 @@
 </template>
 
 <style scoped lang="scss">
-    
+    @use '../partials/variables';
+    a {
+        color: $brand-secondary-color;
+    }
 </style>
