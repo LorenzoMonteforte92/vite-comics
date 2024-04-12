@@ -1,6 +1,11 @@
 <script>
+    import HeroCards from './HeroCards.vue';
     export default {
         name: 'AppHero',
+        
+        components: {
+            HeroCards
+        },
 
         data(){
             return{
@@ -19,7 +24,9 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur cupiditate dicta eligendi alias fugit libero. Alias, consequatur repellat. Quam tempora dolorem quisquam odit. Quae eveniet provident tenetur a. Soluta.</div>
+                <div class="col-12 text-white">
+                    <HeroCards></HeroCards>
+                </div>
             </div>
         </div>
     </section>
