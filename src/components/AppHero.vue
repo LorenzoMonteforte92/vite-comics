@@ -98,9 +98,7 @@
     <section>
         <div class="container py-5">
             <div class="row">
-                <div class="col-12 ">
-                    <HeroCards></HeroCards>
-                </div>
+                <HeroCards></HeroCards>
             </div>
         </div>
     </section>
