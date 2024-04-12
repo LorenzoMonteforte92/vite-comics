@@ -96,9 +96,9 @@
 <template>
     <div class="hero" ></div>
     <section>
-        <div class="container">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-12 text-white">
+                <div class="col-12 ">
                     <HeroCards></HeroCards>
                 </div>
             </div>
@@ -116,8 +116,8 @@
         background-repeat: no-repeat;
         min-height: 320px;
     }
-    // togliere
-    // .container{
-    //     height: 350px;
-    // }
+    
+    section{
+        background-color: #1C1C1C;
+    }
 </style>

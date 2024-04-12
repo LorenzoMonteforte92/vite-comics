@@ -17,9 +17,18 @@
 </script>
 
 <template>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eveniet quos possimus saepe minima optio obcaecati repellat earum aperiam reiciendis harum quidem delectus? Quo laboriosam, maxime dolorem pariatur expedita quisquam.
+    <div class="card" style="width: 18rem;">
+            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body px-0">
+            <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
+    .card{
+        background-color: transparent;
+        border: none;
+    }
 
 </style>
