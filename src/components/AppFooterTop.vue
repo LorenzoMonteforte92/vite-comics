@@ -101,7 +101,7 @@
 </script>
 
 <template>
-    <section class="overflow-hidden position-relative" >
+    <section >
         <div class="container">
             <div class="row pt-5">
                 <div class="col-2">
@@ -144,7 +144,6 @@
                 </div>
             </div>
         </div>
-        <img class="position-absolute" src="../assets/img/dc-logo-bg.png" alt="">
     </section>
 </template>
 
@@ -162,12 +161,6 @@ section{
         }
 }
 
-img{
-    right: 0px;
-    transform: scale(1.4);
-    top: -7%;
-}
-
 ul{
     padding: 0;
 
@@ -178,6 +171,13 @@ ul{
     a {
     color: #959595;
     }
+}
+
+.container{
+    background-image: url('../assets/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 100%;
 }
 
 </style>
