@@ -1,6 +1,9 @@
 <script>
     export default {
         name: 'HeroCards',
+        props: {
+            cardContent: Object
+        },
         
 
         data(){
@@ -18,9 +21,9 @@
 
 <template>
     <div class="card" style="width: calc(100% / 6);">
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" class="card-img-top" alt="...">
+            <div class="ms-card-img" ><img :src="cardContent.thumb" class="card-img-top" alt="..."></div>
         <div class="card-body px-0">
-            <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div><p class="card-text text-white">{{ cardContent.series }}</p></div>
         </div>
     </div>
 </template>
@@ -31,4 +34,11 @@
         border: none;
     }
 
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .ms-card-img{
+        height: 80%
+    }
 </style>
