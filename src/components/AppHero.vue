@@ -98,10 +98,11 @@
     <div class="hero" ></div>
     <section class="position-relative">
         <div class="current-series position-absolute py-2 px-4"><h4 class="fw-bold text-white m-0" >CURRENT SERIES</h4></div>
-        <div class="container py-5">
+        <div class="container py-5 d-flex flex-column">
             <div class="row">
                 <HeroCards v-for="comic in comics" :cardContent="comic"></HeroCards>
             </div>
+            <button class="px-5 py-1">LOAD MORE</button>
         </div>
     </section>
 </template>
@@ -126,5 +127,11 @@
         display: inline-block;
         top: -24px;
         left: 91px;
+    }
+
+    button{
+        background-color: $brand-primary-color;
+        color: white;
+        margin: auto;
     }
 </style>
