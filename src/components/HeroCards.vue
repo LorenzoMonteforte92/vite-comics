@@ -20,6 +20,7 @@
 </script>
 
 <template>
+    
     <div class="card" style="width: calc(100% / 6);">
             <div class="ms-card-img" ><img :src="cardContent.thumb" class="card-img-top" alt="..."></div>
         <div class="card-body px-0">
@@ -29,6 +30,8 @@
 </template>
 
 <style scoped lang="scss">
+@use '../style/partials/variables' as *;
+
     .card{
         background-color: transparent;
         border: none;

@@ -96,8 +96,8 @@
 
 <template>
     <div class="hero" ></div>
-    <section>
-        <button></button>
+    <section class="position-relative">
+        <div class="current-series position-absolute py-2 px-4"><h4 class="fw-bold text-white m-0" >CURRENT SERIES</h4></div>
         <div class="container py-5">
             <div class="row">
                 <HeroCards v-for="comic in comics" :cardContent="comic"></HeroCards>
@@ -119,5 +119,12 @@
     
     section{
         background-color: #1C1C1C;
+    }
+
+    .current-series{
+        background-color: $brand-primary-color;
+        display: inline-block;
+        top: -24px;
+        left: 91px;
     }
 </style>
